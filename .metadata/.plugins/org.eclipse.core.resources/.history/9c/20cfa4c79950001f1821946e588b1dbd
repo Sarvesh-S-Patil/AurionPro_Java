@@ -1,0 +1,19 @@
+package com.apro.state.test;
+
+import com.apro.state.model.Ordered;
+import com.apro.state.model.Packet;
+
+public class PacketStateTest {
+	public static void main(String[] args) {
+		Packet packet = new Packet(new Ordered());
+		packet.nextState();
+		packet.currentState();
+		packet.previousState();
+		packet.currentState();
+		packet.nextState();
+		packet.nextState();
+		packet.nextState();
+		packet.currentState();
+	}
+
+}

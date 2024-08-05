@@ -1,0 +1,9 @@
+package com.apro.assignment.model;
+
+public enum Regions {
+	Europe,
+	America,
+	Asia,
+	MiddleEastAsiaAndAfrica
+
+}

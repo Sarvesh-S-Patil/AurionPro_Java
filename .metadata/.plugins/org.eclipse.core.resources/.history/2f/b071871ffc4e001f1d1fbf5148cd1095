@@ -1,0 +1,5 @@
+package com.apro.creational.singelton.test;
+
+public class DatabaseConnectionTest {
+
+}

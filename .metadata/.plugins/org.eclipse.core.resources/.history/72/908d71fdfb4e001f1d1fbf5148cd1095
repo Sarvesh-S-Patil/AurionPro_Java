@@ -1,0 +1,5 @@
+package com.apro.creational.singelton.model;
+
+public class DatabaseConnection {
+
+}

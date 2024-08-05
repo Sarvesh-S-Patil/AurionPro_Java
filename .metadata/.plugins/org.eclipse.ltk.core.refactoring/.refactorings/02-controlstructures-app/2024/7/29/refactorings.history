@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;PIG.java&apos; to &apos;08-calisthenics-app/src/com.apro.model&apos;&#x0D;&#x0A;- Original project: &apos;02-controlstructures-app&apos;&#x0D;&#x0A;- Destination element: &apos;08-calisthenics-app/src/com.apro.model&apos;&#x0D;&#x0A;- Original element: &apos;com.apro.iterative.test.assignment.PIG.java&apos;" description="Copy compilation unit" destination="=08-calisthenics-app/src&lt;com.apro.model" element1="/src&lt;com.apro.iterative.test.assignment{PIG.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1721209829241" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,5 @@
+package com.apro.abstractFactory.account.test;
+
+public class AccountTest {
+
+}

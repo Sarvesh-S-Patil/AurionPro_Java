@@ -1,0 +1,14 @@
+package com.apro.observer.model;
+
+public class EmailNotifier implements INotifier {
+
+	@Override
+	public void notify(Account account,String operation) {
+		
+		System.out.println("Account "+operation+" successfully");
+		System.out.println("Updated account details are -");
+		System.out.println(account);
+		
+	}
+
+}

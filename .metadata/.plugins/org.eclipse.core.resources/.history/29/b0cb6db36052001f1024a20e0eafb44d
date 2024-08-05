@@ -1,0 +1,23 @@
+package com.apro.facade.model;
+
+public class Board {
+	private char[][] board;
+
+	public Board() {
+		board = new char[3][3];
+	}
+
+	public char[][] getBoard() {
+		return board;
+	}
+
+	public void setBoardSymbol(int i, int j, char val) {
+		board[i][j]=val;
+	}
+	
+	
+	
+	
+	
+
+}

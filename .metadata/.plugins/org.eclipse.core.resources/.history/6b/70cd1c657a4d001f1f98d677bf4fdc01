@@ -1,0 +1,11 @@
+package com.apro.srp.vioalation.test;
+import com.apro.srp.violation.Invoice;
+public class InvoiceTest {
+	public static void main(String[] args) {
+		Invoice invoice = new Invoice("2","Savings account", 20000, 2);
+		
+		System.out.println(invoice.calculateTax());
+		System.out.println(invoice.printInvoice());
+	}
+
+}

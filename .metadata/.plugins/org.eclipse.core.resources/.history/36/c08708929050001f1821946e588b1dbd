@@ -1,0 +1,15 @@
+package com.apro.observer.model;
+
+public class WhatsappNotifer  implements INotifier{
+
+	@Override
+	public void notify(Account account, String operation) {
+		System.out.println("Whatsapp Notifier");
+		System.out.println("Account "+operation+" successfully");
+		System.out.println("Updated account details are -");
+		System.out.println(account);
+		
+	}
+
+
+}

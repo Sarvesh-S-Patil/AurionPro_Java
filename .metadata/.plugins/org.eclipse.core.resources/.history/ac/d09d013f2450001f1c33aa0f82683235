@@ -1,0 +1,18 @@
+package com.apro.composite.model;
+
+public class Composite implements Component {
+	String name;
+	
+	public Composite(String name) {
+		super();
+		this.name = name;
+	}
+
+	@Override
+	public void showPrice() {
+		System.out.println(name+" : ");
+		
+	}
+	
+
+}

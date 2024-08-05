@@ -1,0 +1,10 @@
+package com.apro.model;
+
+public class Student {
+	private IStudentService studentService;
+	
+	public double calculatPercentage() {
+		return (studentService.getMarks()/studentService.getNoSubjects())*100;
+	}
+
+}

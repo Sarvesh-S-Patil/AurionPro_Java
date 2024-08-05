@@ -1,0 +1,10 @@
+package com.apro.builder.model;
+
+public class Account {
+	long accountNumber;
+	String accountName;
+	int accountBalance;
+	String address; //optional
+	
+
+}

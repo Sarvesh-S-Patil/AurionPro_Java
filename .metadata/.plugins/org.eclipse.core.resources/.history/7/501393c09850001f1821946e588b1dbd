@@ -1,0 +1,6 @@
+package com.apro.state.model;
+
+public class Packet {
+	IPacketState packetState= new Ordered();
+
+}

@@ -1,0 +1,8 @@
+package com.apro.facade.model;
+
+public class Board {
+	private int[][] board;
+	
+	
+
+}

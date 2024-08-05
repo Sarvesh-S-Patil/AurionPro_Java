@@ -1,0 +1,26 @@
+package com.apro.assignment.test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.apro.assignment.model.Country;
+
+public class CountryTest {
+	public static void main(String[] args) {
+		List<Country> countries = Arrays.asList(
+				new Country("IT", "Italy", 1),
+				new Country("JP", "Japan", 3),
+				new Country("US", "United States of America", 2),
+				new Country("CA", "Canada", 2),
+				new Country("CN", "China", 3),
+				new Country("IN", "India", 3),
+				new Country("AU", "Australia", 3),
+				new Country("ZW", "Zimbabwe",4)	
+				);
+		
+		String str = "            hello      ";
+		System.out.println(str.trim());
+	}
+
+}

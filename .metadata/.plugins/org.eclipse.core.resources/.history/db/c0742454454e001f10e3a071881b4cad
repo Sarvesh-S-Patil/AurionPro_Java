@@ -1,0 +1,18 @@
+package com.dip.solution.test;
+
+import com.dip.solution.model.DBLogger;
+
+import com.dip.solution.model.FIleLogger;
+import com.dip.solution.model.TaxCalculator;
+
+public class TaxTest {
+	public static void main(String[] args) {
+		TaxCalculator taxCalculator = new TaxCalculator(new FIleLogger(),new DBLogger());
+		taxCalculator.calculateTax(1000, 0);
+		
+		Integer a =1;
+		int b=1;
+		System.out.println(a==b);
+	}
+
+}

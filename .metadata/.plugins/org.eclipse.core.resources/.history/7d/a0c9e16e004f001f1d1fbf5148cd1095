@@ -1,0 +1,21 @@
+
+package com.apro.creational.factory.test;
+
+import com.apro.creational.factory.model.CarFactory;
+import com.apro.creational.factory.model.ICar;
+import com.apro.creational.factory.model.MahindraCar;
+import com.apro.creational.factory.model.MarutiCar;
+import com.apro.creational.factory.model.TataCar;
+
+public class CarTest {
+	public static void main(String[] args) {
+		ICar marutiCar = CarFactory.makeCar("Tata");
+		ICar tataCar = CarFactory.makeCar("Maruti");
+		ICar mahindraCar = CarFactory.makeCar("Mahindra");
+		marutiCar.start();
+		tataCar.start();
+		mahindraCar.start();
+		
+	}
+
+}

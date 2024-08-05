@@ -1,0 +1,17 @@
+package com.apro.assignment.model;
+
+public class MiddleEastAsiaAndAfrica implements Region{
+
+	@Override
+	public String getRegion() {
+		// TODO Auto-generated method stub
+		return "MiddleEastAsiaAndAfrica";
+	}
+
+	@Override
+	public int getRegionId() {
+		// TODO Auto-generated method stub
+		return 4;
+	}
+
+}

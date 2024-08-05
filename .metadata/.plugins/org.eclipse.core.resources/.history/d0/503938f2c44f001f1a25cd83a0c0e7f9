@@ -1,0 +1,15 @@
+package com.apro.facade.model;
+
+public class HotelReception {
+	IHotel hotel;
+	public void getIndianMenu() {
+		hotel= new IndianHotel();
+		hotel.getMenu();
+	}
+	public void  getItalianMenu() {
+		hotel= new ItalianHotel();
+		hotel.getMenu();
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.apro.model;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class TicTacToeGameTest {
+	TicTacToeGame ticTacToe;
+	Player player1;
+	Player player2;
+	@BeforeEach
+	void init(){
+		Player player1= new Player("X", 'X');
+		Player player2 = new Player("O", 'O');
+		Board board = new Board(new char[3][3]);
+		ticTacToe= new TicTacToeGame(player1, player2, board);
+		
+	}
+
+	@Test
+	void testHasWon() {
+		char[][] ch = ticTacToe.boardObj.getBoard();
+		ch[0][0]='X';
+		ch[0][1]='X';
+		ch[0][2]='X';
+		assertFalse(ticTacToe.hasWon(player, board), message);
+	}
+
+	@Test
+	void testCheckInput() {
+		fail("Not yet implemented");
+	}
+
+}

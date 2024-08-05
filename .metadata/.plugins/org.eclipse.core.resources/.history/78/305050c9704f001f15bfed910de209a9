@@ -1,0 +1,48 @@
+package com.apro.violation;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Inventory {
+	private List<Guitar> guitars;
+
+	public Inventory() {
+		super();
+		guitars = new ArrayList<Guitar>();
+	}
+	
+	public void addGuitar(Guitar guitar) {
+		guitars.add(guitar);
+	}
+	
+	public List<Guitar> getGuitar(GuitarSpec searchSpec) {
+		List<Guitar> matches = new ArrayList<>();
+		for(Guitar guitar : guitars) {
+			GuitarSpec guitarSpec= guitar.getGuitarSpec(); 
+			if(guitarSpec.getBackWood()!=searchSpec.getBackWood())
+				continue;
+			if(guitarSpec.getBuilder()!=searchSpec.getBuilder())
+				continue;
+			if(guitarSpec.getModel()!=searchSpec.getModel())
+				continue;
+			if(guitarSpec.getTopWood()!=searchSpec.getTopWood())
+				continue;
+			if(guitarSpec.getType()!= searchSpec.getType())
+				continue;
+			matches.add(guitar);
+		}
+		return matches;
+	}
+	
+	
+	public Guitar search(Guitar searchGuitar) {
+		for(Guitar guitar : guitars) {
+			
+		}
+		
+		return searchGuitar;
+		
+	}
+	
+
+}

@@ -1,0 +1,7 @@
+package com.dip.solution.model;
+
+public class DBLogger {
+	public static void error(String errorMessage) {
+		System.out.println("Logged into system : "+errorMessage);
+	}
+}

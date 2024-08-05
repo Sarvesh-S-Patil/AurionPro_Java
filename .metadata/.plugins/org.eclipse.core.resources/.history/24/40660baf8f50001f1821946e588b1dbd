@@ -1,0 +1,17 @@
+package com.apro.observer.test;
+
+import com.apro.observer.model.Account;
+import com.apro.observer.model.EmailNotifier;
+import com.apro.observer.model.SMSNotifer;
+
+public class AccountTest {
+	public static void main(String[] args) {
+		Account account = new Account(1000,"Ramesh",10000);
+		account.addNotifier(new EmailNotifier());
+		account.addNotifier(new SMSNotifer());
+		account.credit(5000);
+		account.debit(10000);
+	}
+
+
+}

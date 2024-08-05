@@ -1,0 +1,31 @@
+package com.apro.adapter.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ShoppingCart {
+	List<IItems> itemList;
+
+	public ShoppingCart() {
+		this.itemList = new ArrayList<IItems>();
+	}
+
+	public ShoppingCart(List<IItems> itemList) {
+		super();
+		this.itemList = itemList;
+	}
+
+	public List<IItems> getItemList() {
+		return itemList;
+	}
+
+	public void addItem(IItems item) {
+		itemList.add(item);
+	}
+	public void addHat(Hat hat) {
+		HatAdapter hatAdapt= new HatAdapter(hat);
+		itemList.add(hatAdapt);
+	}
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.apro.model.Addition.java&apos; to &apos;ArithmeticOperations.java&apos;&#x0D;&#x0A;- Original project: &apos;01_hello_world&apos;&#x0D;&#x0A;- Original element: &apos;com.apro.model.Addition.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.apro.model.ArithmeticOperations.java&apos;" description="Rename compilation unit &apos;Addition.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.apro.model{Addition.java" name="ArithmeticOperations.java" references="false" stamp="1720422570184" version="1.0"/>
+</session>

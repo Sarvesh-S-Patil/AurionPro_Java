@@ -1,0 +1,13 @@
+package com.apro.facade2.model;
+
+public class SoundSystem implements IMovie{
+
+	@Override
+	public void on() {
+		// TODO Auto-generated method stub
+		System.out.println("SoundSystem is on");
+		
+	}
+	
+
+}

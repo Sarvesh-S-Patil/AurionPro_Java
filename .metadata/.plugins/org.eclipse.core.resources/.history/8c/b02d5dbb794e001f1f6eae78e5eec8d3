@@ -1,0 +1,16 @@
+package com.apro.assignment.model;
+
+public class Europe implements Region {
+
+	@Override
+	public String getRegion() {
+		return "Europe";
+	}
+
+	@Override
+	public int getRegionId() {
+		// TODO Auto-generated method stub
+		return 1;
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.apro.iterator.model;
+
+import java.util.ArrayList;
+
+import com.apro.command.model.TurnOffCommand;
+import com.apro.command.model.TurnOnCommand;
+
+public class MyIteratorImplementation  implements MyIterator{
+	private ArrayList<User> userList;
+	private int length;
+	private int position=0;
+
+	// TODO Auto-generated constructor stub
+		this.userList = userList;
+		int length=userList.size();
+	}
+
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		if(userList.get(position)==null)
+			return false;
+		if(position>=length)
+			return false;
+		return true;
+	}
+
+	@Override
+	public Object next() {
+		// TODO Auto-generated method stub
+		User user = userList.get(position);
+		position+=1;
+		return user;
+	}
+
+}

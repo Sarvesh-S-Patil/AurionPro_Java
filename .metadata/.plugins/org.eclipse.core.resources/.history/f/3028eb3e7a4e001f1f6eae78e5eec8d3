@@ -1,0 +1,41 @@
+package com.apro.assignment.model;
+
+public class Country {
+	private String shortName;
+	private String countryName;
+	private Regions region;
+	
+	public Country(String shortName, String countryName, Regions region) {
+		super();
+		this.shortName = shortName;
+		this.countryName = countryName;
+		this.region = region;
+	}
+
+	public String getShortName() {
+		return shortName;
+	}
+
+	public void setShortName(String shortName) {
+		this.shortName = shortName;
+	}
+
+	public String getCountryName() {
+		return countryName;
+	}
+
+	public void setCountryName(String countryName) {
+		this.countryName = countryName;
+	}
+
+	public Region getRegion() {
+		return region;
+	}
+
+	public void setRegion(Region region) {
+		this.region = region;
+	}
+	
+	
+
+}

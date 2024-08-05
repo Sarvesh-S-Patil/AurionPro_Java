@@ -1,0 +1,8 @@
+package com.apro.state.model;
+
+public interface IPacketState {
+	public void next();
+	public void prev();
+	
+
+}

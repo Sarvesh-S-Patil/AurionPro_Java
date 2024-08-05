@@ -1,0 +1,17 @@
+package com.apro.state.model;
+
+public class Packet {
+	IPacketState packetState= new Ordered();
+	
+	public void nextState() {
+		packetState.next(this);
+	}
+	
+	public void previousState() {
+		packetState.previous(this);
+	}
+	public void currentState() {
+		packetState.current(this);
+	}
+
+}

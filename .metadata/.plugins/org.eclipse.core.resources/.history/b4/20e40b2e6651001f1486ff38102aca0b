@@ -1,0 +1,24 @@
+package com.apro.model;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AreaCalculatorTest {
+
+	@Test
+	void testAreaOfCircle() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testAreaOfRectangle() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testAreaOfTriangle() {
+		fail("Not yet implemented");
+	}
+
+}

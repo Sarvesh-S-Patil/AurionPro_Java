@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.apro.test.FIlerReadingTest&apos; to &apos;FileReadingTest&apos;&#x0D;&#x0A;- Original project: &apos;05-stream-app&apos;&#x0D;&#x0A;- Original element: &apos;com.apro.test.FIlerReadingTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.apro.test.FileReadingTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FIlerReadingTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.apro.test{FIlerReadingTest.java[FIlerReadingTest" matchStrategy="1" name="FileReadingTest" qualified="false" references="true" similarDeclarations="false" stamp="1720848415619" textual="false" version="1.0"/>
+</session>

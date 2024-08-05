@@ -1,0 +1,28 @@
+package com.apro.facade.model;
+
+public class TicTacToeGame implements Game{
+	
+	char[][] board ;
+	@Override
+	public void start(Player player1,Player player2) {
+		
+		
+		
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public boolean hasWon(Player player,char[][] board) {
+		char symbol = player.getSymbol();
+		for(int i=0;i<board.length;i++) {
+			if(board[i][0]==board[i][1] && board[i][0]==board[i][2] && board[i][0]==player.getSymbol())
+		}
+		return false;
+	}
+
+}

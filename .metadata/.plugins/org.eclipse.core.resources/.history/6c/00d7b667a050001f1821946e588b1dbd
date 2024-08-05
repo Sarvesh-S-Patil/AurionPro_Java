@@ -1,0 +1,19 @@
+package com.apro.command.model;
+
+public class TurnOff implements Command{
+	Device device;
+	
+
+	public TurnOff(Device device) {
+		this.device = device;
+	}
+
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		device.turnOn();
+		
+	}
+
+}

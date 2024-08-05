@@ -1,0 +1,24 @@
+package com.apro.facade.model;
+
+public class Board {
+	
+	private int[][] board ;
+	
+	
+
+	public Board(int[][] board) {
+		super();
+		this.board = board;
+	}
+
+	public int[][] getBoard() {
+		return board;
+	}
+
+	public void setBoard(int[][] board) {
+		this.board = board;
+	}
+
+	
+
+}

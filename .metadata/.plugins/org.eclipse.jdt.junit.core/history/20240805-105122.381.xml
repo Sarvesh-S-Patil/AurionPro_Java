@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TicTacToeGameTest" project="TicTacToeTDD" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.apro.model.TicTacToeGameTest" time="0.029" displayname="TicTacToeGameTest" uniqueid="[engine:junit-jupiter]/[class:com.apro.model.TicTacToeGameTest]">
+    <testcase name="testCheckInput" classname="com.apro.model.TicTacToeGameTest" time="0.02" displayname="testCheckInput()" uniqueid="[engine:junit-jupiter]/[class:com.apro.model.TicTacToeGameTest]/[method:testCheckInput()]"/>
+    <testcase name="testHasWon" classname="com.apro.model.TicTacToeGameTest" time="0.009" displayname="testHasWon()" uniqueid="[engine:junit-jupiter]/[class:com.apro.model.TicTacToeGameTest]/[method:testHasWon()]"/>
+  </testsuite>
+</testrun>

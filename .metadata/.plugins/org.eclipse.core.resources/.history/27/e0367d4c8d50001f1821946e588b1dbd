@@ -1,0 +1,25 @@
+package com.apro.observer.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Account {
+	long accountNumber;
+	String name;
+	double balance;
+	List<INotifier> notifiers ;
+	
+	public Account(long accountNumber, String name, double balance) {
+		super();
+		this.accountNumber = accountNumber;
+		this.name = name;
+		this.balance = balance;
+		notifiers= new ArrayList<INotifier>();
+	}
+	
+	public void addNotifier(INotifier notifer) {
+		notifiers.add(notifer);
+	}
+	
+	
+}

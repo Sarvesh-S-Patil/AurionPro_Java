@@ -1,0 +1,14 @@
+package com.apro.model;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StudentTest {
+
+	@Test
+	void testCalculatPercentage() {
+		fail("Not yet implemented");
+	}
+
+}

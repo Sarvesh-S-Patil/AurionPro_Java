@@ -1,0 +1,7 @@
+package com.apro.abstractFactory.account.model;
+
+public interface AccountFactory {
+	
+	public IAccount makeAccount();
+
+}

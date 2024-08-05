@@ -1,0 +1,8 @@
+package com.apro.observer.test;
+
+import com.apro.observer.model.Account;
+
+public class AccountTest {
+	Account account = new Account(1000,"Ramesh",10000);
+
+}

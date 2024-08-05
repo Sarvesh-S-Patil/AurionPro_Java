@@ -1,0 +1,5 @@
+package com.apro.decoator2.model;
+
+public interface Iuser {
+
+}

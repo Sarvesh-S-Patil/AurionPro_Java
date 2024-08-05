@@ -1,0 +1,30 @@
+package com.apro.model;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class OperationsTest {
+
+	@Test
+	void testAdd() {
+		Operations operation = new Operations();
+		int actual = operation.add(5, 5);
+		int expected = 10;
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testMultiply() {
+		Operations operation = new Operations();
+		assertEquals(5,operation.multiply(5, 10));
+	}
+	
+	@Test
+	void testSubtract() {
+		Operations operation = new Operations();
+		assertEquals(10,operation.subtract(15, 5));
+	}
+	
+
+}

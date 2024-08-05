@@ -1,0 +1,23 @@
+package com.apro.builder.model;
+
+public class Account {
+	long accountNumber;
+	String accountName;
+	int accountBalance;
+	
+	public Account setAccountNumber(long accountNumber) {
+		this.accountNumber = accountNumber;
+		return this;
+	}
+	public Account setAccountName(String accountName) {
+		this.accountName = accountName;
+		return this;
+	}
+	public Account setAccountBalance(int accountBalance) {
+		this.accountBalance = accountBalance;
+		return this;
+	}
+	
+	
+
+}

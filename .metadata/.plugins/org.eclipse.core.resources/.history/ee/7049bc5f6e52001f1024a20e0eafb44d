@@ -1,0 +1,32 @@
+package com.apro.facade.model;
+
+public class Board {
+	
+	private char[][] board ;
+	
+	
+
+	public Board(char[][] board) {
+		super();
+		this.board = board;
+	}
+
+	public char[][] getBoard() {
+		return board;
+	}
+
+	public void setBoard(char[][] board) {
+		this.board = board;
+	}
+	
+	public void printBoard(){
+		for(char[] row : board) {
+			for(char ch: row)
+				System.out.println(ch + " | ");
+			System.out.println();
+		}
+	}
+
+	
+
+}

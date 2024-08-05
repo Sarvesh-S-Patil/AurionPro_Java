@@ -1,0 +1,38 @@
+package com.apro.test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StringsStream {
+	public static void main(String[] args) {
+		List<String> names = Arrays.asList("Ramesh","Suresh","Vinayak","Devansh","Pranay","b");
+		
+		List<String> namesAscending = names.stream()
+											.sorted()
+											.limit(3)
+											.collect(Collectors.toList());
+		System.out.println("First three sorted names : ");
+		namesAscending.stream().forEach((name)->System.out.println(name));
+		
+		List<String> namesContainingAandAscending = names.stream()
+														.filter((name)-> name.contains("a"))
+														.sorted()
+														.limit(3)
+														.collect(Collectors.toList());
+		System.out.println("First three sorted names containg a : ");
+		namesAscending.stream().forEach((name)->System.out.println(name));
+		
+		List<String> namesDescending = names.stream()
+				.sorted(Collections.reverseOrder())
+				.collect(Collectors.toList());
+		System.out.println("Sorted nammes in descending order : ");
+		namesAscending.stream().forEach((name)->System.out.println(name));
+		
+		
+		
+	}
+
+}

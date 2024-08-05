@@ -1,0 +1,20 @@
+package com.apro.abstractFactory.account.model;
+
+public class CurrentAccount implements IAccount {
+	long accountNumber;
+	String accountName;
+	double balance;
+	double overdraftLimit;
+	@Override
+	public void credit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void debit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

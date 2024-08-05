@@ -1,0 +1,5 @@
+package com.apro.assignment.model;
+
+public class Country {
+
+}
