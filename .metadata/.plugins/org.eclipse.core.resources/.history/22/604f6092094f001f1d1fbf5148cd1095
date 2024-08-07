@@ -1,5 +1,0 @@
-package com.apro.abstractFactory.account.model;
-
-public class CurrentAccount {
-
-}

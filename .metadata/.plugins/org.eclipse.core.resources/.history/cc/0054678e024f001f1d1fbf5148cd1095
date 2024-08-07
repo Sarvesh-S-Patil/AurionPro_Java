@@ -1,5 +1,0 @@
-package com.apro.creational.factory.model;
-
-public class CurrentAccount impements IAccount {
-
-}

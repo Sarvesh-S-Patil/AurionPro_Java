@@ -1,8 +1,0 @@
-package com.apro.assignment.model;
-
-public interface Region {
-		int regionId=0;
-		public String getRegion();
-		
-		public int getRegionId();
-}

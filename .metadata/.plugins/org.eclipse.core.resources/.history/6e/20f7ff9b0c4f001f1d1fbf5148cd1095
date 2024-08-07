@@ -1,8 +1,0 @@
-package com.apro.abstractFactory.account.test;
-
-public class AccountTest {
-	public static void main(String[] args) {
-		
-	}
-
-}

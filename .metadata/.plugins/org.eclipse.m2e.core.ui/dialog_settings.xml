@@ -8,6 +8,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="mockito"/>
 			<item value="TicTacToeTDD"/>
 			<item value="20-unit-testing"/>
 		</list>

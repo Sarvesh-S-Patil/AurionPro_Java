@@ -1,5 +1,0 @@
-package com.apro.isp.solution.model;
-
-public interface IWorker {
-
-}

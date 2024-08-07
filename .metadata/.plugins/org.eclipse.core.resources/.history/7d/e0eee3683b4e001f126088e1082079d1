@@ -1,6 +1,0 @@
-package com.apro.isp.solution.model;
-
-public interface IWorkable {
-	public void 
-
-}

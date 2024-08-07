@@ -1,7 +1,0 @@
-package com.ocp.demo;
-
-@FunctionalInterface
-public interface Shape {
-	public void area();
-
-}
