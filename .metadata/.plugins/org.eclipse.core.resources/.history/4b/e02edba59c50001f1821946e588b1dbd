@@ -1,8 +1,0 @@
-package com.apro.strategy.model;
-
-public class OperationStrategy {
-	IOperation operation;
-
-	
-
-}

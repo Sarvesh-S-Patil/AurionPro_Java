@@ -1,5 +1,0 @@
-package com.apro.facade.model;
-
-public interface Game {
-
-}

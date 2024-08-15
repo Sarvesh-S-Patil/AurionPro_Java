@@ -1,7 +1,0 @@
-package com.apro.violation;
-
-public enum Wood {
-	INDIAN ROSEWOOD, BRAZILIAN ROSEWOOD, MAHOGANY, MAPLE, COCOBOLO, CEDAR, ADIRONDACK, ALDER, SITKA
-
-
-}

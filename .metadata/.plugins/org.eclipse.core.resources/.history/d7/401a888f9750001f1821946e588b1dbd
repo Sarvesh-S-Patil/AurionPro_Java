@@ -1,7 +1,0 @@
-package com.apro.state.model;
-
-public interface IPacketState {
-	
-	
-
-}

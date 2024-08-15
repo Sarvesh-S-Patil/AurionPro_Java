@@ -1,7 +1,0 @@
-package com.apro.adapter.model;
-
-public interface IItems {
-	public String getName();
-	public double getPrice();
-
-}

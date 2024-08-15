@@ -8,6 +8,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="40-springcore2-app"/>
+			<item value="39-springcore-app"/>
 			<item value="mockito"/>
 			<item value="TicTacToeTDD"/>
 			<item value="20-unit-testing"/>

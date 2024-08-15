@@ -1,7 +1,0 @@
-package com.apro.facade.model;
-
-public interface Game {
-	public void start(Player player1,Player player2);
-	public void stop();
-
-}

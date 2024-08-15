@@ -31,7 +31,17 @@ public class FirstServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 		PrintWriter writer =  response.getWriter();
-		writer.print("<h1><i>Hello ! Welcome to servlet </i></h1>");
+		int number1 = Integer.parseInt(request.getParameter("number1"));
+		int number2 = Integer.parseInt(request.getParameter("number2"));
+		int sum = number1+number2;
+		writer.print("Sum of numbers " +number1+ " and "+number2 + " is : "+sum);
+		writer.print("\n");
+		String[] colours =   request.getParameterValues("colour");
+		writer.print("Favourite Colours are : ");
+		for(String colour:colours) {
+			writer.print(colour+"\n");
+		}
+		
 	}
 
 	/**

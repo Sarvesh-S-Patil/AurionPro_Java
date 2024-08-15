@@ -1,8 +1,0 @@
-package com.apro.decorator.test;
-
-public class CarServiceTest {
-	public static void main(String[] args) {
-		
-	}
-
-}

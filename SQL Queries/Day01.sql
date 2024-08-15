@@ -75,7 +75,7 @@ where commission is null;
 
 #6. Display emp_name,salary,comission,ctc(calculated column)
 
-select *, (emp.salary+emp.commission) as CTC
+select *,  ifnull(commission,0)+emp.salary as CTC
 from emp;
 
 
