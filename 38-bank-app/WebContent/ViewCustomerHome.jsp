@@ -13,9 +13,9 @@
 </head>
 <body>
 <% 
-    session = request.getSession(); 
+    session = request.getSession(false); 
  
-    if (session == null) { 
+    if (session == null || session.getAttribute("adminId")==null) { 
         // No session found, forward to login page 
         request.setAttribute("loginStatus", "false"); 
         RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp"); 

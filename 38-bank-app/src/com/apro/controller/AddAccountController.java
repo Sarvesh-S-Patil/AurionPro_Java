@@ -38,7 +38,13 @@ public class AddAccountController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		HttpSession session = request.getSession();
+		HttpSession session = request.getSession(false);
+		if (session == null || session.getAttribute("adminId")==null) { 
+	        // No session found, forward to login page 
+	        request.setAttribute("loginStatus", "false"); 
+	        response.sendRedirect("Login.jsp");
+	        return; 
+	    } 
 		Connection connection = (Connection) session.getAttribute("connection");
 		Customer customer;
 		String addAccountStatus = (String) session.getAttribute("addAccountStatus");

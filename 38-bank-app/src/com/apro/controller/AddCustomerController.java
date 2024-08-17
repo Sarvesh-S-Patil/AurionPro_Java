@@ -35,7 +35,14 @@ public class AddCustomerController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		HttpSession session = request.getSession();
+		HttpSession session = request.getSession(false);
+		if (session == null || session.getAttribute("adminId")==null) { 
+	        // No session found, forward to login page 
+	        request.setAttribute("loginStatus", "false"); 
+	        RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp"); 
+	        dispatcher.forward(request, response); 
+	        return; 
+	    } 
 		String firstName=request.getParameter("firstName");
 		String lastName=request.getParameter("lastName");
 		String email=request.getParameter("email");

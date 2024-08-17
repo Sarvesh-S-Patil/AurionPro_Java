@@ -29,7 +29,14 @@ public class ViewPassbookController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession();
+        HttpSession session = request.getSession(false);
+        if (session == null || session.getAttribute("customerId")==null) { 
+            // No session found, forward to login page 
+            request.setAttribute("loginStatus", "false"); 
+            RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp"); 
+            dispatcher.forward(request, response); 
+            return; 
+        } 
         Connection connection = (Connection) session.getAttribute("connection");
         Long customerId = (Long) session.getAttribute("customerId");
         long id = (customerId != null) ? customerId : -1L;

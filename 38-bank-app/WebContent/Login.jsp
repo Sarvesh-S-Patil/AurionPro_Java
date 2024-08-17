@@ -54,7 +54,7 @@
 	</div>
   	
       <main class="form-signin">
-      <form action="HomeController" method="post">
+      <form action="login" method="post">
         <img class="mb-4" src="assets/Bank Logo.jpg" alt="Bank Logo" width="200" height="200">
         <h1 class="h3 mb-3 fw-normal">Sign in as : </h1>
         

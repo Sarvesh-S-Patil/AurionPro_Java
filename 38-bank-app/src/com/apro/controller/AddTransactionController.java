@@ -33,7 +33,14 @@ public class AddTransactionController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-        HttpSession session = request.getSession();
+        HttpSession session = request.getSession(false);
+        if (session == null || session.getAttribute("customerId")==null) { 
+            // No session found, forward to login page 
+            request.setAttribute("loginStatus", "false"); 
+            RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp"); 
+            dispatcher.forward(request, response); 
+            return; 
+        } 
         Connection connection = (Connection) session.getAttribute("connection");
         long senderAccountId = request.getParameter("senderAccountId").isEmpty() ? -1 : Long.parseLong(request.getParameter("senderAccountId"));
         long receiverAccountId = request.getParameter("receiverAccountId").isEmpty() ? -1 : Long.parseLong(request.getParameter("receiverAccountId"));
