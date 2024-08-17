@@ -6,7 +6,7 @@ public class Transaction {
     private long recieverAccountId;
     private String transactionType;
     private double amount;
-    private String date; // or java.util.Date if you use Date type
+    private String date; 
     
     
 	public Transaction(long transactionId, long senderAccountId, long recieverAccountId, String transactionType,

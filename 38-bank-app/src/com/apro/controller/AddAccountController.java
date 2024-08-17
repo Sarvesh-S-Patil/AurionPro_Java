@@ -51,18 +51,28 @@ public class AddAccountController extends HttpServlet {
 		if(session.getAttribute("viewCustomerStatus")== null || session.getAttribute("viewCustomerStatus").equals("false")) {
 			long customerId = Long.parseLong(request.getParameter("customerId"));
 			CustomerUtil customerUtil = new CustomerUtil(connection);
-			customer =customerUtil.getCustomerById(customerId);
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("AddBankAccount.jsp");
-			if(customer==null) {
-				session.setAttribute("viewCustomerStatus","false");
+			try {
+				customer =customerUtil.getCustomerById(customerId);
+				RequestDispatcher requestDispatcher = request.getRequestDispatcher("AddBankAccount.jsp");
+				if(customer==null) {
+					session.setAttribute("viewCustomerStatus","false");
+				}
+				else {
+					System.out.println(customer);
+					session.setAttribute("customerId",customerId);
+					session.setAttribute("customer",customer);
+					session.setAttribute("viewCustomerStatus","true");
+				}
+				requestDispatcher.forward(request, response);
 			}
-			else {
-				System.out.println(customer);
-				session.setAttribute("customerId",customerId);
-				session.setAttribute("customer",customer);
-				session.setAttribute("viewCustomerStatus","true");
+			catch (Exception e) {
+				// TODO: handle exception
+				RequestDispatcher requestDispatcher = request.getRequestDispatcher("AdminException.jsp");
+				request.setAttribute("errorMessage",e.getMessage());
+				requestDispatcher.forward(request, response);
 			}
-			requestDispatcher.forward(request, response);
+			
+
 		}
 		else {
 			long customerId = (long) session.getAttribute("customerId");

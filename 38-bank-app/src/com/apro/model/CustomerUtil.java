@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.apro.exception.CustomerNotFoundException;
+
 public class CustomerUtil {
 	
 	Connection connection;
@@ -47,10 +49,17 @@ public class CustomerUtil {
 				Customer customer = new Customer(customerId,firstName, lastName, email, password, adminId);
 				return customer;
 			}
+			else {
+				throw new CustomerNotFoundException();
+			}
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		catch (CustomerNotFoundException e) {
+			// TODO: handle exception
+			throw e;
 		}
 		return null;
 		

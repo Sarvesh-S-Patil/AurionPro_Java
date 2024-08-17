@@ -25,7 +25,7 @@ public class CustomerLogin {
 			preparedStatement.setString(1, username);
 			preparedStatement.setString(2,password);
 			ResultSet resultSet = preparedStatement.executeQuery();
-			//System.out.println(resultSet.next());
+		
 			return resultSet.next();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -50,8 +50,8 @@ public class CustomerLogin {
                 }
             }
         } catch (SQLException e) {
-            // Log the exception or handle it as needed
-            e.printStackTrace(); // Consider using a logging framework like SLF4J or Log4j
+        
+            e.printStackTrace(); 
         }
 
         return customerId;

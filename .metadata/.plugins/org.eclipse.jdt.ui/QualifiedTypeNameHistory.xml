@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="com.apro.model.DBConnection"/>
 <fullyQualifiedTypeName name="com.apro.model.SupplierController"/>
 <fullyQualifiedTypeName name="com.apro.model.ProductController"/>
 <fullyQualifiedTypeName name="com.apro.model.InventoryController"/>
@@ -13,7 +11,6 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="com.apro.test.temp.TransactionTest"/>
-<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="javax.annotation.Generated"/>
 <fullyQualifiedTypeName name="com.mysql.cj.exceptions.CJConnectionFeatureNotAvailableException"/>
@@ -41,7 +38,6 @@
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="com.apro.model.CustomerUtil"/>
 <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.apro.model.AccountUtil"/>
 <fullyQualifiedTypeName name="com.apro.model.Transaction"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="com.apro.model.Computer"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.apro.exception.CustomerNotFoundException"/>
+<fullyQualifiedTypeName name="com.apro.exception.AccountNotFoundException"/>
 </qualifiedTypeNameHistroy>

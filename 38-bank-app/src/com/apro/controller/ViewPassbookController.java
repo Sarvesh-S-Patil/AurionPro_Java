@@ -31,7 +31,7 @@ public class ViewPassbookController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
         if (session == null || session.getAttribute("customerId")==null) { 
-            // No session found, forward to login page 
+
             request.setAttribute("loginStatus", "false"); 
             RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp"); 
             dispatcher.forward(request, response); 
@@ -64,8 +64,8 @@ public class ViewPassbookController extends HttpServlet {
                 transactions = accountUtil.accountTransactions(accountId);
                 request.setAttribute("transactions", transactions);
             } catch (NumberFormatException e) {
-                // Handle invalid number format
-                request.setAttribute("error", "Invalid account ID format.");
+               
+                request.setAttribute("errorMessage", "Invalid account ID format.");
             }
         }
 

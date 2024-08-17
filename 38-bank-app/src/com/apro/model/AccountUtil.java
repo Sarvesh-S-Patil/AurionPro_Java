@@ -96,6 +96,7 @@ public class AccountUtil {
 			preparedStatement.setLong(1,accountId);
 			preparedStatement.setLong(2, accountId);
 			ResultSet resultSet = preparedStatement.executeQuery();
+			
 			while(resultSet.next()) {
 				long transactionId=resultSet.getLong(1);
 				long senderAccountId=resultSet.getLong(2);

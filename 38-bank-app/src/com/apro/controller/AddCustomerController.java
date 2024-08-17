@@ -56,6 +56,7 @@ public class AddCustomerController extends HttpServlet {
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("AddCustomer.jsp");
 		if(adminLogged.equals("true")) {
+			
 			customerUtil.addCustomer(firstName, lastName, email, password, adminId);
 			request.setAttribute("addCustomerStatus", "true");
 			System.out.println("Customer Added Sucessfully");

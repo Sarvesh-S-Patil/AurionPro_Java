@@ -53,7 +53,7 @@ public class LoginController extends HttpServlet {
 		session.setAttribute("connection",connection);
 		RequestDispatcher requestDispatcher = null;
 		if(loginType.equals("admin")) {
-			
+			session.setAttribute("adminLogged","true");
 			AdminLogin adminLogin = new AdminLogin(connection);
 			boolean validCombination =adminLogin.verifyLogin(username, password);
 			if(validCombination) {

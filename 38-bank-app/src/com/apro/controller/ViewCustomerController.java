@@ -35,10 +35,10 @@ public class ViewCustomerController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+	
 		HttpSession session = request.getSession(false);
 		if (session == null || session.getAttribute("adminId")==null) { 
-	        // No session found, forward to login page 
+	       
 	        request.setAttribute("loginStatus", "false"); 
 	        RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp"); 
 	        dispatcher.forward(request, response); 
@@ -48,10 +48,9 @@ public class ViewCustomerController extends HttpServlet {
         CustomerUtil customerUtil = new CustomerUtil(connection);
         List<Customer> customers = customerUtil.getCustomers();
         System.out.println("Number of customers retrieved: " + (customers != null ? customers.size() : 0));
-        // Set customers list as a request attribute
+   
         request.setAttribute("customers", customers);
-        
-        // Forward to JSP page
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("ViewCustomer.jsp");
         dispatcher.forward(request, response);
 	}

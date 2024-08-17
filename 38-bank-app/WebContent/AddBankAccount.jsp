@@ -7,7 +7,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Customer List</title>
+    <style>
+    .header {
+        background-color: #f8f9fa;
+    }
 
+    .nav-pills {
+        justify-content: center;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: #f8f9fa;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-link.active {
+        background-color: #0d6efd;
+        color: white;
+    }
+</style>
 <title>Add Account</title>
 </head>
 <body>
@@ -15,7 +44,7 @@
     session = request.getSession(false); 
  
     if (session == null ||  session.getAttribute("adminId")==null) { 
-        // No session found, forward to login page 
+     
         request.setAttribute("loginStatus", "false"); 
         response.sendRedirect("Login.jsp"); 
         return; 
@@ -34,19 +63,18 @@
 	        });
 	    </script>
 	</div>
-	<main>
-		<div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-              <span class="fs-4">Add Bank Account</span>
-            </a>
-            <div class="d-flex">
-    				<a href="AdminHome.jsp" class="btn btn-primary btn-lg ms-auto" tabindex="-1" role="button">
-    				Go back</a>
-			</div>
-            	
-	</main>
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom header">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="AdminHome.jsp" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="AddCustomer.jsp" class="nav-link" >Add Customer</a></li>
+            <li class="nav-item"><a href="ViewCustomerController" class="nav-link">View Customer</a></li>
+            <li class="nav-item"><a href="AddBankAccount.jsp" class="nav-link active" aria-current="page">Add Bank Account</a></li>   
+            <li class="nav-item"><a href="ViewTransactionController" class="nav-link">View Transactions</a></li>
+            <li class="nav-item"><a href="LogoutController" class="nav-link text-danger">Logout</a></li>
+        </ul>
+    </div>
+</header>
 	
 	<section class="vh-100 gradient-custom">
     <div class="container py-5 h-100">

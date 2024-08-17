@@ -33,10 +33,10 @@ public class EditProfileController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+
 		HttpSession session = request.getSession(false);
 		if (session == null || session.getAttribute("customerId")==null) { 
-	        // No session found, forward to login page 
+	    
 	        request.setAttribute("loginStatus", "false"); 
 	        RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp"); 
 	        dispatcher.forward(request, response); 
